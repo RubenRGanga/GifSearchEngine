@@ -1,0 +1,14 @@
+<div class="border-right p-3" id="sidebar">
+  <h3 class="text-light">Gifs Search Engine</h3>
+  <hr class="text-light">
+
+  <div class="list-group list-reset text-center">
+    <button
+      *ngFor="let tag of tags"
+      (click)="searchByLabel( tag )"
+      class="list-group-item list-group-item-action">
+      {{ tag | uppercase }}
+    </button>
+  </div>
+
+</div>
