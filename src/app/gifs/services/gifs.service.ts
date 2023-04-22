@@ -4,7 +4,11 @@ import { Gif, SearchResponse } from '../interfaces/gifs.interfaces';
 
 @Injectable({providedIn: 'root'})
 export class GifsService {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.readLocalStorage();
+    console.log('Read history of Local Storage');
+
+  }
 
   private _tagsHistory: string[] = [];
   private apiKey: string = "MM7k4wyskrhxHkUzdLhsS0hGajHH4JnR"
@@ -25,6 +29,18 @@ export class GifsService {
 
     this._tagsHistory.unshift(tag)
     this._tagsHistory = this._tagsHistory.splice(0,10);
+    this.saveLocalStorage()
+  }
+
+  private saveLocalStorage(): void {
+    localStorage.setItem('history', JSON.stringify( this._tagsHistory ))
+  }
+
+  private readLocalStorage(): void {
+    if ( !localStorage.getItem('history')) return;
+      this._tagsHistory = JSON.parse(localStorage.getItem('history')!);
+
+      this.seachTag(this._tagsHistory[0])
   }
 
   seachTag(tag: string):void {
