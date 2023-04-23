@@ -1,27 +1,16 @@
-# GifSearchEngine
+<a href="https://gif-search-engine-angularexercise.netlify.app/"># Angular Exercise - Gif Search Engine</a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+This is an Angular exercise that showcases the use of SOLID principles in creating components and modules to develop a WebApp. The app utilizes the Giphy API as a search engine for animated Gifs, and it also keeps track of the user's recent searches.
 
-## Development server
+With this exercise, I will learn how to implement SOLID principles in an Angular project, as well as how to consume an external API and persist data in the browser's local storage.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Development
 
-## Code scaffolding
+Deployed at https://gif-search-engine-angularexercise.netlify.app/ through Netlify.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Screnshots
 
-## Build
+![screenshot](src/assets/screenshot.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
