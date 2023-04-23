@@ -1,4 +1,4 @@
-<a href="https://gif-search-engine-angularexercise.netlify.app/"># Angular Exercise - Gif Search Engine</a>
+# Angular Exercise - Gif Search Engine
 
 This is an Angular exercise that showcases the use of SOLID principles in creating components and modules to develop a WebApp. The app utilizes the Giphy API as a search engine for animated Gifs, and it also keeps track of the user's recent searches.
 
